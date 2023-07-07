@@ -1,4 +1,5 @@
 import { Bio } from './Bio'
+import { Education } from './Education'
 import { Experience } from './Experience'
 
 export const Home = () => {
@@ -7,6 +8,7 @@ export const Home = () => {
       <article className="space-y-16">
         <Bio />
         <Experience />
+        <Education />
       </article>
     </main>
   )
