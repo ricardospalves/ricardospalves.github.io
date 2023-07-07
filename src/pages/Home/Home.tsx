@@ -1,6 +1,7 @@
 import { Bio } from './Bio'
 import { Education } from './Education'
 import { Experience } from './Experience'
+import { Skills } from './Skills'
 
 export const Home = () => {
   return (
@@ -9,6 +10,7 @@ export const Home = () => {
         <Bio />
         <Experience />
         <Education />
+        <Skills />
       </article>
     </main>
   )
