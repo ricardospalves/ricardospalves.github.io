@@ -11,7 +11,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="pt-BR">
-      <body>{children}</body>
+      <body className="font-sans text-base leading-normal antialiased text-foregroundLightTheme bg-backgroundLightTheme dark:text-foregroundDarkTheme dark:bg-backgroundDarkTheme">
+        {children}
+      </body>
     </html>
   )
 }
