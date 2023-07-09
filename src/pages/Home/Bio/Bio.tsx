@@ -1,3 +1,5 @@
+import { ResumeLink } from './ResumeLink/ResumeLink'
+
 export const Bio = () => {
   return (
     <div>
@@ -15,6 +17,8 @@ export const Bio = () => {
         sempre zelando pelas boas práticas, experiência do usuário e
         acessibilidade.
       </p>
+
+      <ResumeLink />
     </div>
   )
 }
