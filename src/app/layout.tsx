@@ -1,3 +1,4 @@
+import { Footer } from '@/layout/Footer/Footer'
 import './globals.css'
 
 export const metadata = {
@@ -13,6 +14,8 @@ export default function RootLayout({
     <html lang="pt-BR">
       <body className="font-sans text-base leading-normal antialiased text-foregroundLightTheme bg-backgroundLightTheme dark:text-foregroundDarkTheme dark:bg-backgroundDarkTheme">
         {children}
+
+        <Footer />
       </body>
     </html>
   )
