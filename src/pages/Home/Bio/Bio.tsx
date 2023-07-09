@@ -1,3 +1,4 @@
+import { CommunicationChannels } from './CommunicationChannels/CommunicationChannels'
 import { ResumeLink } from './ResumeLink/ResumeLink'
 
 export const Bio = () => {
@@ -17,6 +18,8 @@ export const Bio = () => {
         sempre zelando pelas boas práticas, experiência do usuário e
         acessibilidade.
       </p>
+
+      <CommunicationChannels />
 
       <ResumeLink />
     </div>
