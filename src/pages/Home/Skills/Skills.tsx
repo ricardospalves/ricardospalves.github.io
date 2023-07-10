@@ -14,7 +14,7 @@ const LIST = [
 export const Skills = () => {
   return (
     <TargetSection heading={TARGET_SECTIONS.skills.name}>
-      <ul className="pl-8 list-disc space-y-2">
+      <ul className="pl-8 list-disc space-y-2 text-black dark:text-white">
         {LIST.map((item) => {
           return <li key={item}>{item}</li>
         })}
