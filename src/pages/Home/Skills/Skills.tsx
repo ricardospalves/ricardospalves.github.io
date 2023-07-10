@@ -1,4 +1,5 @@
 import { TargetSection } from '@/components/TargetSection'
+import { TARGET_SECTIONS } from '@/constants/TARGET_SECTIONS'
 
 const LIST = [
   'React (com Next.js e Remix)',
@@ -12,7 +13,7 @@ const LIST = [
 
 export const Skills = () => {
   return (
-    <TargetSection id="habilidades" heading="Habilidades">
+    <TargetSection heading={TARGET_SECTIONS.skills.name}>
       <ul className="pl-8 list-disc space-y-2">
         {LIST.map((item) => {
           return <li key={item}>{item}</li>
