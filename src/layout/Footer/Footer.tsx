@@ -1,4 +1,5 @@
 import { ExternalTextLink } from '@/components/ExternalTextLink/ExternalTextLink'
+import { CONFIG } from '@/global/config'
 
 const YEAR_RELEASED = 2023
 const CURRENT_YEAR = new Date().getFullYear()
@@ -10,7 +11,7 @@ export const Footer = () => {
         <p>
           Desenvolvido por{' '}
           <ExternalTextLink href="https://github.com/ricardospalves">
-            Ricardo Alves
+            {CONFIG.author}
           </ExternalTextLink>
           .
         </p>
@@ -29,7 +30,7 @@ export const Footer = () => {
 
         <p>
           Copyright © {YEAR_RELEASED}
-          {CURRENT_YEAR !== YEAR_RELEASED && `–${CURRENT_YEAR}`} Ricardo Alves
+          {CURRENT_YEAR !== YEAR_RELEASED && `–${CURRENT_YEAR}`} {CONFIG.author}
         </p>
       </div>
     </footer>
