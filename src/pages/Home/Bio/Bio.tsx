@@ -19,9 +19,9 @@ export const Bio = () => {
         acessibilidade.
       </p>
 
-      <CommunicationChannels />
-
       <ResumeLink />
+
+      <CommunicationChannels />
     </div>
   )
 }
