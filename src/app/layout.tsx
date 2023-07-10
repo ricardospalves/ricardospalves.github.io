@@ -1,8 +1,11 @@
 import { Footer } from '@/layout/Footer/Footer'
 import './globals.css'
+import { Metadata } from 'next'
 
-export const metadata = {
+export const metadata: Metadata = {
   title: 'Ricardo Alves',
+  description:
+    'Desenvolvedor front-end desde 2015 com contribuição em mais de 70 projetos (e contando).',
 }
 
 export default function RootLayout({
