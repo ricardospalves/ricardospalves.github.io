@@ -1,5 +1,4 @@
 import { CONFIG } from '@/global/config'
-import { CommunicationChannels } from './CommunicationChannels/CommunicationChannels'
 import { ResumeLink } from './ResumeLink/ResumeLink'
 
 export const Bio = () => {
@@ -25,8 +24,6 @@ export const Bio = () => {
       </div>
 
       <ResumeLink />
-
-      <CommunicationChannels />
     </div>
   )
 }
