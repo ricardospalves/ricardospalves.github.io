@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://ricardospalves.github.io/sitemap.xml
