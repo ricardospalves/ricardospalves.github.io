@@ -4,6 +4,7 @@ import { Metadata } from 'next'
 import { CONFIG } from '@/global/config'
 
 export const metadata: Metadata = {
+  metadataBase: new URL(CONFIG.url),
   title: CONFIG.name,
   description: CONFIG.description,
   robots: 'index,follow',
@@ -12,7 +13,7 @@ export const metadata: Metadata = {
     site: CONFIG.url,
     description: CONFIG.description,
     title: CONFIG.name,
-    images: `${CONFIG.url}/cover.png`,
+    images: '/cover.png',
   },
   openGraph: {
     url: CONFIG.url,
@@ -21,7 +22,7 @@ export const metadata: Metadata = {
     siteName: CONFIG.name,
     title: CONFIG.name,
     description: CONFIG.description,
-    images: `${CONFIG.url}/cover.png`,
+    images: '/cover.png',
   },
 }
 
