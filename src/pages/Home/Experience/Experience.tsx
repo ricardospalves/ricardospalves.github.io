@@ -1,15 +1,17 @@
 import { EntityCard } from '@/components/EntityCard'
 import { TargetSection } from '@/components/TargetSection'
+import { TARGET_SECTIONS } from '@/constants/TARGET_SECTIONS'
+import { MonthNumbers } from '@/enums/MonthNumbers'
 
 export const Experience = () => {
   return (
-    <TargetSection id="experiencia" heading="Experiência">
+    <TargetSection heading={TARGET_SECTIONS.experience.name}>
       <EntityCard
         heading="Desenvolvedor front-end"
         subheading="Spacelab - Produtora e Agência Web"
-        startDate={new Date(2015, 0)}
+        startDate={new Date(2015, MonthNumbers.January)}
         endDate="current"
-        description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa in hic itaque quis unde veritatis nobis vero sed. Maxime expedita recusandae quasi dicta deserunt! Iste praesentium aliquid voluptatem pariatur iure."
+        description="Responsável pelo front-end (programação de interfaces), já desenvolvi sites, landing pages, e-commerces, blogs, emails marketing, hotsites e muito outros projetos relacionados a web, das mais variadas formas, especificações e particularidades, sempre com design responsivo. Esses projetos usam tecnologias como React (Next.js/Remix), JavaScript/TypeScript, CSS (SASS/SCSS e Tailwind CSS), HTML e muitas outras."
       />
     </TargetSection>
   )
