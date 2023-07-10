@@ -15,6 +15,7 @@ const createTargetSection = (name: string): TargetSection => {
 }
 
 export const TARGET_SECTIONS = {
+  social: createTargetSection('Onde me encontrar'),
   experience: createTargetSection('Experiência'),
   education: createTargetSection('Formação acadêmica'),
   skills: createTargetSection('Habilidades'),
