@@ -10,7 +10,11 @@ export const Time = ({ date }: TimeProps) => {
   const now = new Date()
 
   return (
-    <time dateTime={formatISO(isCurrentDate ? now : date)}>
+    <time
+      dateTime={formatISO(isCurrentDate ? now : date, {
+        representation: 'date',
+      })}
+    >
       {isCurrentDate
         ? 'atualmente'
         : format(date, `MMMM 'de' yyyy`, {
