@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   description: CONFIG.description,
   robots: 'index,follow',
   verification: {
-    google: 'co-FFjJZMK_DvOQJSzw9Bz0v4ObsXy_i92hAjlbmBfg',
+    google: 'u1GUmbTO1-GCaMc0IjPoL7EUp3MPUapTtdFMUCE3Ob4',
   },
   twitter: {
     card: 'summary_large_image',
