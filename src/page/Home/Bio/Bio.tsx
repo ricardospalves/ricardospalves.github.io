@@ -3,7 +3,7 @@ import { ResumeLink } from './ResumeLink/ResumeLink'
 
 export const Bio = () => {
   return (
-    <div>
+    <div className="max-w-xl mx-auto p-4">
       <h1 className="text-3xl font-bold text-black dark:text-white">
         {CONFIG.author}
       </h1>
