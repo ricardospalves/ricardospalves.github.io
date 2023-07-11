@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     site: CONFIG.url,
     description: CONFIG.description,
     title: CONFIG.name,
-    images: '/cover.png',
+    images: '/twitter-card-cover.png',
   },
   openGraph: {
     url: CONFIG.url,
@@ -25,7 +25,7 @@ export const metadata: Metadata = {
     siteName: CONFIG.name,
     title: CONFIG.name,
     description: CONFIG.description,
-    images: '/cover.png',
+    images: '/open-graph-cover',
   },
 }
 
