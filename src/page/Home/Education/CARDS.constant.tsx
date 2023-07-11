@@ -24,7 +24,7 @@ export const CARDS: CardProps[] = [
     heading: 'ETEC - Escola Técnica Estadual de São Paulo',
     subheading: 'Técnico em Informática',
     startDate: new Date(2012, MonthNumbers.January),
-    endDate: new Date(2013, MonthNumbers.December),
+    endDate: new Date(2013, MonthNumbers.June),
   }),
   createCard({
     heading: 'Impacta Tecnologia',
