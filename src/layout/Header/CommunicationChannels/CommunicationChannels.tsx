@@ -2,7 +2,7 @@ import { CHANNELS } from './CHANNELS.constant'
 
 export const CommunicationChannels = () => {
   return (
-    <ul className="flex gap-6 md:gap-8 shrink-0">
+    <ul className="flex justify-center lg:mt-8 gap-4 shrink-0">
       {CHANNELS.map(({ Icon, href, name }) => {
         return (
           <li key={name} className="shrink-0">

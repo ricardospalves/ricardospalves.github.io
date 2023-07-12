@@ -71,9 +71,11 @@ export default function RootLayout({
       </head>
 
       <body className="flex flex-col min-h-screen font-sans text-base leading-normal antialiased text-foregroundLightTheme bg-backgroundLightTheme dark:text-foregroundDarkTheme dark:bg-backgroundDarkTheme">
-        <Header />
+        <div className="lg:grid lg:grid-cols-[minmax(0,1fr)_36rem_minmax(0,1fr)] grow">
+          <Header />
 
-        <div className="grow">{children}</div>
+          <div>{children}</div>
+        </div>
 
         <Footer />
       </body>

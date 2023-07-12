@@ -3,8 +3,8 @@ import { Logo } from './Logo'
 
 export const Header = () => {
   return (
-    <header className="shrink-0 px-2 md:p-4 sticky top-0 z-10 md:static border-b border-current md:border-0 text-black dark:text-white bg-backgroundLightTheme dark:bg-backgroundDarkTheme md:bg-transparent">
-      <div className="h-10 md:h-auto flex items-center justify-between max-w-3xl mx-auto">
+    <header className="lg:max-w-xs w-full h-11 lg:h-auto lg:ml-auto sticky top-0 z-10 lg:static border-b border-current lg:border-0 bg-backgroundLightTheme dark:bg-backgroundDarkTheme text-black dark:text-white">
+      <div className="flex items-center justify-between lg:block max-w-xl lg:max-w-none h-full lg:h-auto mx-auto px-4 lg:py-4 lg:sticky lg:top-0">
         <Logo />
         <CommunicationChannels />
       </div>
