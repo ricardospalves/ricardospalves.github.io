@@ -11,7 +11,7 @@ export const Experience = () => {
         subheading="Spacelab - Produtora e Agência Web"
         startDate={new Date(2015, MonthNumbers.January)}
         endDate="current"
-        description="Responsável pelo front-end (programação de interfaces), já desenvolvi sites, landing pages, e-commerces, blogs, emails marketing, hotsites e muito outros projetos relacionados a web, das mais variadas formas, especificações e particularidades. Todos os projetos são responsivos e usam tecnologias como React (Next.js/Remix), JavaScript/TypeScript, CSS (SASS/SCSS e Tailwind CSS), HTML e muitas outras."
+        description="Responsável pelo front-end (programação de interfaces), já desenvolvi sites, landing pages, e-commerces, blogs, emails marketing, hotsites e muitos outros projetos relacionados a web, das mais variadas formas, especificações e particularidades. Todos os projetos são responsivos e usam tecnologias como React (Next.js/Remix), JavaScript/TypeScript, CSS (SASS/SCSS e Tailwind CSS), HTML e muitas outras."
       />
     </TargetSection>
   )
