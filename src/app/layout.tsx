@@ -6,7 +6,7 @@ import { Header } from '@/layout/Header'
 
 export const metadata: Metadata = {
   metadataBase: new URL(CONFIG.url),
-  title: CONFIG.name,
+  title: `${CONFIG.name} - ${CONFIG.occupation}`,
   description: CONFIG.description,
   robots: 'index,follow',
   verification: {

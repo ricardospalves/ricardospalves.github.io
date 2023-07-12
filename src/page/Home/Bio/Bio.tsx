@@ -14,13 +14,17 @@ export const Bio = () => {
         <p>
           Olá, sou o <strong>{CONFIG.author}</strong>,{' '}
           <strong>{CONFIG.occupation.toLowerCase()}</strong> desde{' '}
-          <time dateTime="2015">2015</time> com uma paixão por criar interfaces
-          incríveis e funcionais. Contribuí em mais de 70 projetos (e contando),
-          sempre zelando pelas boas práticas, experiência do usuário e
-          acessibilidade.
+          <time dateTime="2015">2015</time>, apaixonado por criar interfaces
+          incríveis e funcionais. Com ampla contribuição em uma variedade de
+          projetos, desde pequenos emails marketing até sites robustos. Busco
+          evoluir constantemente em cada novo desafio, zelando pelas boas
+          práticas, experiência do usuário e acessibilidade.
         </p>
 
-        <p>Aprendendo um pouco mais todo dia e evoluindo sempre.</p>
+        <p>
+          Estou sempre atualizado com as últimas tendências e tecnologias,
+          buscando expandir meu conhecimento e aprimorar minhas habilidades.
+        </p>
       </div>
 
       <ResumeLink />
