@@ -6,7 +6,7 @@ const CURRENT_YEAR = new Date().getFullYear()
 
 export const Footer = () => {
   return (
-    <footer className="py-8 mt-16 border-t border-current text-black dark:text-white">
+    <footer className="shrink-0 py-8 mt-16 border-t border-current text-black dark:text-white">
       <div className="max-w-xl mx-auto px-4 text-center space-y-4">
         <p>
           Desenvolvido por{' '}

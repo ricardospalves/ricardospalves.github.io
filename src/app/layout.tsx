@@ -70,10 +70,10 @@ export default function RootLayout({
         <meta name="theme-color" content="#000000" />
       </head>
 
-      <body className="font-sans text-base leading-normal antialiased text-foregroundLightTheme bg-backgroundLightTheme dark:text-foregroundDarkTheme dark:bg-backgroundDarkTheme">
+      <body className="flex flex-col min-h-screen font-sans text-base leading-normal antialiased text-foregroundLightTheme bg-backgroundLightTheme dark:text-foregroundDarkTheme dark:bg-backgroundDarkTheme">
         <Header />
 
-        {children}
+        <div className="grow">{children}</div>
 
         <Footer />
       </body>
