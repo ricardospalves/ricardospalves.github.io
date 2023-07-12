@@ -1,6 +1,6 @@
 import { ReactNode } from 'react'
 import { createIDFromString } from '@/utils/createIDFromString'
-import { Heading } from './Heading/Heading'
+import { Heading } from './Heading'
 
 export type TargetSectionProps = {
   heading: string

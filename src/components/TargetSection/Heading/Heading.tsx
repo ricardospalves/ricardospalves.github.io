@@ -8,7 +8,7 @@ export type HeadingProps = {
 
 export const Heading = ({ children, href }: HeadingProps) => {
   return (
-    <h2 className="flex items-center gap-2 py-2 px-2 lg:px-0 sticky top-0 border-b border-current text-xl font-bold text-black dark:text-white bg-backgroundLightTheme dark:bg-backgroundDarkTheme">
+    <h2 className="flex items-center gap-2 py-2 px-2 lg:px-0 sticky top-10 md:top-0 border-b border-current text-xl font-bold text-black dark:text-white bg-backgroundLightTheme dark:bg-backgroundDarkTheme">
       <span className="block grow">{children}</span>
 
       <Link
