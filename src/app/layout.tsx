@@ -2,6 +2,7 @@ import { Footer } from '@/layout/Footer'
 import './globals.css'
 import { Metadata } from 'next'
 import { CONFIG } from '@/global/config'
+import { Header } from '@/layout/Header'
 
 export const metadata: Metadata = {
   metadataBase: new URL(CONFIG.url),
@@ -70,6 +71,8 @@ export default function RootLayout({
       </head>
 
       <body className="font-sans text-base leading-normal antialiased text-foregroundLightTheme bg-backgroundLightTheme dark:text-foregroundDarkTheme dark:bg-backgroundDarkTheme">
+        <Header />
+
         {children}
 
         <Footer />
