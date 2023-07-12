@@ -1,4 +1,4 @@
-import { Footer } from '@/layout/Footer/Footer'
+import { Footer } from '@/layout/Footer'
 import './globals.css'
 import { Metadata } from 'next'
 import { CONFIG } from '@/global/config'
