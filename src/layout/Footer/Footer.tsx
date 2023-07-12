@@ -1,4 +1,4 @@
-import { ExternalTextLink } from '@/components/ExternalTextLink/ExternalTextLink'
+import { ExternalTextLink } from '@/components/ExternalTextLink'
 import { CONFIG } from '@/global/config'
 
 const YEAR_RELEASED = 2023
