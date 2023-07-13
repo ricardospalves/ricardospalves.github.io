@@ -9,8 +9,9 @@ export const CommunicationChannels = () => {
             <a
               href={href}
               className="block w-8 h-8 text-blue-800 transition-colors hover:text-blue-950 focus-visible:text-blue-950 dark:text-sky-400 dark:hover:text-sky-300 dark:focus-visible:text-sky-300"
-              aria-label={name}
             >
+              <span className="sr-only">{name}</span>
+
               <Icon
                 className="block w-full h-full"
                 aria-hidden={true}
