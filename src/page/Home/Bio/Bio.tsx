@@ -1,5 +1,5 @@
 import { CONFIG } from '@/global/config'
-import { ResumeLink } from './ResumeLink/ResumeLink'
+import { Resumes } from './Resumes/Resumes'
 
 export const Bio = () => {
   return (
@@ -27,7 +27,7 @@ export const Bio = () => {
         </p>
       </div>
 
-      <ResumeLink />
+      <Resumes />
     </div>
   )
 }
