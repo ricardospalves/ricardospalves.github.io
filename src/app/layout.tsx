@@ -1,8 +1,8 @@
-import { Footer } from '@/layout/Footer'
-import './globals.css'
 import { Metadata } from 'next'
-import { CONFIG } from '@/global/config'
 import { Header } from '@/layout/Header'
+import { Footer } from '@/layout/Footer'
+import { CONFIG } from '@/global/config'
+import './globals.css'
 
 export const metadata: Metadata = {
   metadataBase: new URL(CONFIG.url),
@@ -70,7 +70,7 @@ export default function RootLayout({
         <meta name="theme-color" content="#000000" />
       </head>
 
-      <body className="flex flex-col min-h-screen font-sans text-base leading-normal antialiased text-foregroundLightTheme bg-backgroundLightTheme dark:text-foregroundDarkTheme dark:bg-backgroundDarkTheme">
+      <body className="flex flex-col min-h-screen font-sans text-base leading-normal text-foregroundLightTheme bg-backgroundLightTheme dark:text-foregroundDarkTheme dark:bg-backgroundDarkTheme antialiased">
         <div className="lg:grid lg:grid-cols-[minmax(0,1fr)_36rem_minmax(0,1fr)] grow">
           <Header />
 
