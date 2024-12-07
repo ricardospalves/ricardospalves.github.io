@@ -1,17 +1,14 @@
 import type { Config } from 'tailwindcss'
 
-const config: Config = {
+export default {
   content: ['./src/**/*.{js,ts,jsx,tsx,mdx}'],
   theme: {
     extend: {
       colors: {
-        foregroundLightTheme: '#595959',
-        backgroundLightTheme: '#fff',
-        foregroundDarkTheme: '#a9a9a9',
-        backgroundDarkTheme: '#1f1f1f',
+        background: 'var(--background)',
+        foreground: 'var(--foreground)',
       },
     },
   },
   plugins: [],
-}
-export default config
+} satisfies Config

@@ -1,30 +1,36 @@
-# Ricardo Alves - website pessoal
+This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-![Status do deploy do GitHub Actions](https://github.com/ricardospalves/ricardospalves.github.io/actions/workflows/nextjs.yml/badge.svg)
-![Licença MIT](https://img.shields.io/github/license/ricardospalves/ricardospalves.github.io)
+## Getting Started
 
-[🌐 Website pessoal](https://ricardospalves.github.io)
+First, run the development server:
 
-## 🗣️ Sobre o projeto
+```bash
+npm run dev
+# or
+yarn dev
+# or
+pnpm dev
+# or
+bun dev
+```
 
-Neste projeto foquei em um design minimalista, primeiro porque não sou um bom designer (😂) e segundo porque queria passar as informações de forma clara, objetiva e sem distrações. Isso ajudou a manter a estrutura do website mais consistente e uniforme.
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-Outra preocupação foi com a acessibilidade, então as cores usadas foram testadas e todas possuem o nível [WCAG AAA](https://www.w3.org/WAI/WCAG2AA-Conformance), que é o nível mais alto. Isso quer dizer que os textos, links e elementos de interação da página possuem um alto contraste em relação a cor de fundo. Isso facilita na leitura e interação do usuário. Além das cores, as fontes e elementos de interação estão em tamanhos adequados.
+You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-A acessibilidade atingiu a nota máxima nos testes do [_Lighthouse_](https://developer.chrome.com/docs/lighthouse/overview/), tanto no _desktop_ quanto no _mobile_, como pode ser conferido nos links abaixo:
+This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
-- [📱 Análise para o mobile](https://pagespeed.web.dev/analysis/https-ricardospalves-github-io/5rz6xajg37?form_factor=mobile)
-- [🖥️ Análise para o desktop](https://pagespeed.web.dev/analysis/https-ricardospalves-github-io/5rz6xajg37?form_factor=desktop)
+## Learn More
 
-<img src="./accessibility-gauge.png" alt="Nota máxima nos testes de acessibilidade.">
+To learn more about Next.js, take a look at the following resources:
 
-## ✨ Tecnologias
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-- React com TypeScript (JavaScript)
-- Next.js
-- CSS (Tailwind)
-- HTML
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
 
-## 📝 Licença
+## Deploy on Vercel
 
-Esse projeto é open source e foi lançado sob a [licença MIT](https://github.com/ricardospalves/ricardospalves.github.io/blob/main/LICENSE).
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
