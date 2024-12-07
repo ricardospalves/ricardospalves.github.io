@@ -1,3 +1,3 @@
-export default function Home() {
-  return <h1>Ricardo Alves</h1>
-}
+import { Home } from '@/page/Home'
+
+export default Home
