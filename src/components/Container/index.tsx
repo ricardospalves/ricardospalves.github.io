@@ -28,7 +28,10 @@ export const Container = <E extends ElementType = 'div'>({
 
   return (
     <Component
-      className={classNames(['max-w-5xl w-full mx-auto', className])}
+      className={classNames([
+        'max-w-prose lg:max-w-5xl w-full mx-auto',
+        className,
+      ])}
       {...props}
     />
   )
