@@ -1,6 +1,13 @@
 import type { Metadata } from 'next'
+import { Inter } from 'next/font/google'
 import { CONFIG } from '@/global/config'
 import './globals.css'
+import { classNames } from '@/utils/classNames'
+
+const interFont = Inter({
+  subsets: ['latin'],
+  display: 'swap',
+})
 
 export const metadata: Metadata = {
   metadataBase: new URL(CONFIG.url),
@@ -68,7 +75,12 @@ export default function RootLayout({
         <meta name="theme-color" content="#000000" />
       </head>
 
-      <body className="font-sans text-base leading-normal antialiased">
+      <body
+        className={classNames([
+          'text-base leading-normal antialiased',
+          interFont.className,
+        ])}
+      >
         {children}
       </body>
     </html>
