@@ -1,20 +1,20 @@
 import { classNames } from '@/utils/classNames'
 import { ReactNode } from 'react'
 
-type AvatarProps = {
+type CardProps = {
   children?: ReactNode
   className?: string
 }
 
-export const Avatar = ({ children, className }: AvatarProps) => {
+export const Card = ({ className, children }: CardProps) => {
   return (
-    <div
+    <article
       className={classNames([
-        'size-16 p-2 rounded-full bg-highlightForeground',
+        'flex items-start gap-4 pt-8 first:pt-0 mt-8 first:mt-0',
         className,
       ])}
     >
       {children}
-    </div>
+    </article>
   )
 }

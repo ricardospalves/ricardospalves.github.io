@@ -3,8 +3,8 @@ import { HTMLAttributes } from 'react'
 
 type NativeProps = HTMLAttributes<HTMLDivElement>
 
-type ContentProps = NativeProps
+type CardContentProps = NativeProps
 
-export const Content = ({ className, ...props }: ContentProps) => {
+export const CardContent = ({ className, ...props }: CardContentProps) => {
   return <div className={classNames(['grow', className])} {...props} />
 }
