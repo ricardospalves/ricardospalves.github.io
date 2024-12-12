@@ -10,7 +10,7 @@ export const CardAvatar = ({ children, className }: CardAvatarProps) => {
   return (
     <div
       className={classNames([
-        'size-16 p-2 rounded-full bg-highlightForeground',
+        'shrink-0 size-16 p-2 rounded-full bg-highlightForeground',
         className,
       ])}
     >
