@@ -12,7 +12,10 @@ export const CardHeading = ({ as, className, ...props }: CardHeadingProps) => {
 
   return (
     <Component
-      className={classNames(['grow text-white text-lg', className])}
+      className={classNames([
+        'grow text-highlightForeground text-lg',
+        className,
+      ])}
       {...props}
     />
   )
