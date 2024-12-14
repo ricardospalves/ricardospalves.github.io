@@ -9,7 +9,7 @@ type RootProps = {
 
 export const Root = ({ children, className }: RootProps) => {
   return (
-    <section className={classNames(['min-h-screen py-12 px-2', className])}>
+    <section className={classNames(['py-16 px-2', className])}>
       <Container>{children}</Container>
     </section>
   )
