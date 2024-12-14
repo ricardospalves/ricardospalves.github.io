@@ -19,13 +19,15 @@ export const WorkExperience = () => {
             </Entities.CardAvatar>
 
             <Entities.CardContent>
-              <Entities.CardHeading as="h3">
-                Front-end na <b>Spacelab</b>
-              </Entities.CardHeading>
+              <Entities.CardTitle as="h3">
+                Desenvolvedor front-end
+              </Entities.CardTitle>
+
+              <Entities.CardInstitution>Spacelab</Entities.CardInstitution>
 
               <Entities.CardTimeRange
-                startISODate="01-01-2015"
-                endISODate="01-01-2025"
+                startISODate="2015-01-26"
+                endISODate="current"
               />
             </Entities.CardContent>
           </Entities.Card>
