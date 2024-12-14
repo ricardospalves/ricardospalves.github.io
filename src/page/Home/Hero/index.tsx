@@ -5,8 +5,8 @@ import { LuDownload as DownloadIcon } from 'react-icons/lu'
 
 export const Hero = () => {
   return (
-    <div className="px-2 py-8">
-      <Container className="grid items-center min-h-screen">
+    <div className="flex flex-col justify-center min-h-screen px-2 py-8">
+      <Container className="grid items-center">
         <div className="lg:grid lg:grid-cols-2">
           <div>
             <h1 className="text-4xl lg:text-6xl leading-tight font-bold text-highlightForeground">
