@@ -10,7 +10,7 @@ export const Card = ({ className, children }: CardProps) => {
   return (
     <article
       className={classNames([
-        'flex items-start gap-4 pt-8 first:pt-0 mt-8 first:mt-0',
+        'flex items-start gap-4 pt-8 px-2 first:pt-0 mt-8 first:mt-0',
         className,
       ])}
     >
