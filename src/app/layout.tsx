@@ -1,8 +1,9 @@
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import { CONFIG } from '@/global/config'
-import './globals.css'
 import { classNames } from '@/utils/classNames'
+import { Footer } from '@/layouts/Footer'
+import './globals.css'
 
 const interFont = Inter({
   subsets: ['latin'],
@@ -81,7 +82,10 @@ export default function RootLayout({
           interFont.className,
         ])}
       >
-        {children}
+        <div className="grid grid-rows-[minmax(auto,1fr)_auto] min-h-screen">
+          <div>{children}</div>
+          <Footer />
+        </div>
       </body>
     </html>
   )
