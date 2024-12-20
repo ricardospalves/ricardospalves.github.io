@@ -7,7 +7,7 @@ export const Skills = () => {
       <Section.Container>
         <Section.Heading as="h2">Habilidades</Section.Heading>
 
-        <ul className="grid grid-cols-6 gap-4 text-highlightForeground">
+        <ul className="grid grid-cols-2 xs:grid-cols-3 sm:grid-cols-4 lg:grid-cols-6 gap-2 text-highlightForeground">
           {SKILLS_LIST.map(({ Icon, name }) => {
             return (
               <li
