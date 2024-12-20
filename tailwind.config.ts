@@ -9,6 +9,9 @@ export default {
         foreground: 'var(--foreground)',
         highlightForeground: 'var(--highlightForeground)',
       },
+      screens: {
+        xs: '480px',
+      },
     },
   },
   plugins: [],
