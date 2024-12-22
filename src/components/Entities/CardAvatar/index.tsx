@@ -1,20 +1,17 @@
+import type { AvatarProps } from '@/components/Avatar'
+import { Avatar } from '@/components/Avatar'
 import { classNames } from '@/utils/classNames'
-import { ReactNode } from 'react'
 
-type CardAvatarProps = {
-  children?: ReactNode
-  className?: string
-}
+type CardAvatarProps = AvatarProps
 
-export const CardAvatar = ({ children, className }: CardAvatarProps) => {
+export const CardAvatar = ({ className, ...props }: CardAvatarProps) => {
   return (
-    <div
+    <Avatar
       className={classNames([
-        'shrink-0 size-16 p-2 rounded-full bg-highlightForeground',
+        'shrink-0 size-16 text-background bg-highlightForeground',
         className,
       ])}
-    >
-      {children}
-    </div>
+      {...props}
+    />
   )
 }
