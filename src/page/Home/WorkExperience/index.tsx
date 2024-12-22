@@ -9,13 +9,8 @@ export const WorkExperience = () => {
 
         <Entities.Root>
           <Entities.Card>
-            <Entities.CardAvatar>
-              <svg
-                viewBox="0 0 24 24"
-                className="block size-full fill-background"
-              >
-                <circle cx={12} cy={12} r={12} />
-              </svg>
+            <Entities.CardAvatar title="Spacelab - Produtora e Agência Web">
+              SP
             </Entities.CardAvatar>
 
             <Entities.CardContent>
@@ -23,7 +18,9 @@ export const WorkExperience = () => {
                 Desenvolvedor front-end
               </Entities.CardTitle>
 
-              <Entities.CardInstitution>Spacelab</Entities.CardInstitution>
+              <Entities.CardInstitution>
+                Spacelab - Produtora e Agência Web
+              </Entities.CardInstitution>
 
               <Entities.CardTimeRange
                 startISODate="2015-01-26"
