@@ -4,7 +4,7 @@ import { ReactNode } from 'react'
 
 type EducationListItem = {
   title: ReactNode
-  institution: ReactNode
+  institution: string
   startDate: string
   endDate: string
 }
@@ -18,7 +18,7 @@ const EDUCATION_LIST: EducationListItem[] = [
   },
   {
     title: 'Técnico em Informática',
-    institution: 'ETEC',
+    institution: 'ETEC (Centro Paula Souza)',
     startDate: '2012-06-01T00:00',
     endDate: '2013-12-18T00:00',
   },
@@ -60,13 +60,8 @@ export const Education = () => {
 
             return (
               <Entities.Card key={key}>
-                <Entities.CardAvatar>
-                  <svg
-                    viewBox="0 0 24 24"
-                    className="block size-full fill-background"
-                  >
-                    <circle cx={12} cy={12} r={12} />
-                  </svg>
+                <Entities.CardAvatar title={institution}>
+                  {institution[0].toUpperCase()}
                 </Entities.CardAvatar>
 
                 <Entities.CardContent>
