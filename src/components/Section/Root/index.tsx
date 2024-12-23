@@ -1,13 +1,10 @@
 import { classNames } from '@/utils/classNames'
-import { ReactNode } from 'react'
+import type { HTMLAttributes } from 'react'
 
-type RootProps = {
-  children?: ReactNode
-  className?: string
-}
+type NativeAttributes = HTMLAttributes<HTMLDivElement>
 
-export const Root = ({ children, className }: RootProps) => {
-  return (
-    <section className={classNames(['py-16', className])}>{children}</section>
-  )
+type RootProps = NativeAttributes
+
+export const Root = ({ className, ...props }: RootProps) => {
+  return <section className={classNames(['py-16', className])} {...props} />
 }
