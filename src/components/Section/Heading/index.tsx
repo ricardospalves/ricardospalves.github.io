@@ -13,7 +13,7 @@ export const Heading = ({ as, className, children }: HeadingProps) => {
   return (
     <Component
       className={classNames([
-        'mb-10 lg:mb-16 px-2 lg:px-0 text-2xl lg:text-4xl font-light text-highlightForeground',
+        'mb-10 lg:mb-16 px-2 lg:px-0 text-3xl xs:text-4xl font-light text-highlightForeground',
         className,
       ])}
     >
