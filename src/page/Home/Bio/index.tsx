@@ -1,4 +1,5 @@
 import { Section } from '@/components/Section'
+import { HOME_PAGE_SECTIONS } from '@/constants/homePageSections'
 import { ReactNode } from 'react'
 import { IconBase } from 'react-icons'
 import {
@@ -6,6 +7,8 @@ import {
   LuGraduationCap as GraduationCapIcon,
   LuMonitor as MonitorIcon,
 } from 'react-icons/lu'
+
+const SECTION = HOME_PAGE_SECTIONS.ABOUT
 
 type ListItem = {
   id: string
@@ -45,9 +48,9 @@ const LIST: ListItem[] = [
 
 export const Bio = () => {
   return (
-    <Section.Root>
+    <Section.Root id={SECTION.ID}>
       <Section.Container>
-        <Section.Heading as="h2">Sobre mim</Section.Heading>
+        <Section.Heading as="h2">{SECTION.NAME}</Section.Heading>
 
         <div className="grid lg:grid-cols-2 gap-8 lg:gap-0 px-2 lg:px-0">
           <div className="space-y-4">

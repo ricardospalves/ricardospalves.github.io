@@ -1,6 +1,9 @@
 import { Entities } from '@/components/Entities'
 import { Section } from '@/components/Section'
+import { HOME_PAGE_SECTIONS } from '@/constants/homePageSections'
 import { ReactNode } from 'react'
+
+const SECTION = HOME_PAGE_SECTIONS.EDUCATION
 
 type EducationListItem = {
   title: ReactNode
@@ -50,9 +53,9 @@ const EDUCATION_LIST: EducationListItem[] = [
 
 export const Education = () => {
   return (
-    <Section.Root>
+    <Section.Root id={SECTION.ID}>
       <Section.Container>
-        <Section.Heading as="h2">Educação</Section.Heading>
+        <Section.Heading as="h2">{SECTION.NAME}</Section.Heading>
 
         <Entities.Root>
           {EDUCATION_LIST.map(({ endDate, institution, startDate, title }) => {

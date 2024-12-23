@@ -1,11 +1,14 @@
 import { Entities } from '@/components/Entities'
 import { Section } from '@/components/Section'
+import { HOME_PAGE_SECTIONS } from '@/constants/homePageSections'
+
+const SECTION = HOME_PAGE_SECTIONS.WORK
 
 export const WorkExperience = () => {
   return (
-    <Section.Root>
+    <Section.Root id={SECTION.ID}>
       <Section.Container>
-        <Section.Heading as="h2">Experiência profissional</Section.Heading>
+        <Section.Heading as="h2">{SECTION.NAME}</Section.Heading>
 
         <Entities.Root>
           <Entities.Card>
