@@ -3,6 +3,7 @@ import { Inter } from 'next/font/google'
 import { CONFIG } from '@/global/config'
 import { classNames } from '@/utils/classNames'
 import { Footer } from '@/layouts/Footer'
+import { Header } from '@/layouts/Header'
 import './globals.css'
 
 const interFont = Inter({
@@ -42,7 +43,7 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="pt-BR">
+    <html lang="pt-BR" className="scroll-smooth">
       <head>
         <link
           rel="apple-touch-icon"
@@ -83,6 +84,7 @@ export default function RootLayout({
         ])}
       >
         <div className="grid grid-rows-[minmax(auto,1fr)_auto] min-h-screen">
+          <Header />
           <div>{children}</div>
           <Footer />
         </div>
