@@ -2,6 +2,7 @@ import { Container } from '@/components/Container'
 import { CONFIG } from '@/global/config'
 import Link from 'next/link'
 import { LuDownload as DownloadIcon } from 'react-icons/lu'
+import { SocialMedia } from './SocialMedia'
 
 export const Hero = () => {
   return (
@@ -21,6 +22,8 @@ export const Hero = () => {
               Bacharel em Sistemas para Internet, Técnico em Informática pela
               ETEC, profissional desde 2015 e futuro Full Stack.
             </p>
+
+            <SocialMedia />
 
             <Link
               href="/files/curriculo-ricardo-alves.pdf"
