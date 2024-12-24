@@ -2,6 +2,7 @@
 
 import { HOME_PAGE_SECTIONS } from '@/constants/homePageSections'
 import { useNavigationVisibility } from '@/hooks/useNavigationVisibility'
+import { useScrollSpy } from '@/hooks/useScrollSpy'
 import { classNames } from '@/utils/classNames'
 import Link from 'next/link'
 
@@ -9,6 +10,7 @@ const SECTIONS = Object.values(HOME_PAGE_SECTIONS)
 
 export const Navigation = () => {
   const { open } = useNavigationVisibility((state) => state)
+  const currentSection = useScrollSpy()
 
   return (
     <nav
@@ -21,7 +23,14 @@ export const Navigation = () => {
         {SECTIONS.map(({ ID, NAME }) => {
           return (
             <li key={ID}>
-              <Link href={`#${ID}`} className="block px-2 py-3 md:p-4">
+              <Link
+                href={`#${ID}`}
+                className={classNames([
+                  'block px-2 py-3 md:p-4',
+                  ID === currentSection?.ID &&
+                    'bg-highlightForeground text-background md:bg-transparent md:text-highlightForeground',
+                ])}
+              >
                 {NAME}
               </Link>
             </li>
