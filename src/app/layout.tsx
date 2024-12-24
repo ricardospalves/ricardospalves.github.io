@@ -83,7 +83,7 @@ export default function RootLayout({
           interFont.className,
         ])}
       >
-        <div className="grid grid-rows-[minmax(auto,1fr)_auto] min-h-screen">
+        <div className="grid grid-rows-[auto_minmax(auto,1fr)_auto] min-h-screen">
           <Header />
           <div>{children}</div>
           <Footer />
