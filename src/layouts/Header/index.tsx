@@ -4,10 +4,10 @@ import { Navigation } from './Navigation'
 import { Logo } from './Logo'
 import { BurgerButton } from './BurgerButton'
 import { useSearchParams } from 'next/navigation'
-import { useEffect } from 'react'
+import { Suspense, useEffect } from 'react'
 import { useNavigationVisibility } from '@/hooks/useNavigationVisibility'
 
-export const Header = () => {
+const HeaderChildren = () => {
   const searchParams = useSearchParams()
   const setOpen = useNavigationVisibility((state) => state.setOpen)
 
@@ -23,5 +23,13 @@ export const Header = () => {
         <Navigation />
       </div>
     </header>
+  )
+}
+
+export const Header = () => {
+  return (
+    <Suspense>
+      <HeaderChildren />
+    </Suspense>
   )
 }
