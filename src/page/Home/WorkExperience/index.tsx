@@ -44,9 +44,7 @@ export const WorkExperience = () => {
 
                 <List.Item>
                   Otimizar a performance, acessibilidade e usabilidade das
-                  aplicações, resultando em um aumento significativo na
-                  satisfação do usuário e na conformidade com as diretrizes de
-                  acessibilidade.
+                  aplicações.
                 </List.Item>
               </List.Root>
             </Entities.CardContent>
