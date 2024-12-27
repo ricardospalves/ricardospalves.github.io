@@ -1,5 +1,5 @@
 import { classNames } from '@/utils/classNames'
-import { cloneElement, isValidElement, ReactNode } from 'react'
+import { cloneElement, isValidElement, ReactElement, ReactNode } from 'react'
 
 export type AvatarProps = {
   children?: ReactNode
@@ -27,7 +27,7 @@ export const Avatar = ({ children, className, title }: AvatarProps) => {
     )
   }
 
-  const modifiedChildren = cloneElement(children, {
+  const modifiedChildren = cloneElement(children as ReactElement<HTMLElement>, {
     className: 'block size-full',
   })
 
