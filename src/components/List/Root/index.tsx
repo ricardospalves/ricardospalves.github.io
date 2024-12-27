@@ -13,8 +13,6 @@ type RootProps = NativeProps & OwnProps
 export const Root = ({ ordered, className, ...props }: RootProps) => {
   const Component: ElementType = ordered ? 'ol' : 'ul'
 
-  console.log(ordered)
-
   return (
     <Component
       className={classNames([
