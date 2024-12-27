@@ -1,10 +1,12 @@
-import { formatISO } from 'date-fns'
+import { MetadataRoute } from 'next'
 
-export default function Sitemap() {
+export default function sitemap(): MetadataRoute.Sitemap {
   return [
     {
       url: 'https://ricardospalves.github.io',
-      lastModified: formatISO(new Date(), { representation: 'date' }),
+      lastModified: new Date(),
+      changeFrequency: 'yearly',
+      priority: 1,
     },
   ]
 }
