@@ -22,7 +22,7 @@ const EDUCATION_LIST: EducationListItem[] = [
   {
     title: 'Técnico em Informática',
     institution: 'ETEC (Centro Paula Souza)',
-    startDate: '2012-06-01T00:00',
+    startDate: '2012-07-01T00:00',
     endDate: '2013-12-18T00:00',
   },
   {
