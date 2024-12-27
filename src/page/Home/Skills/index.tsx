@@ -1,6 +1,7 @@
 import { Section } from '@/components/Section'
 import { SKILLS_LIST } from './skillsList'
 import { HOME_PAGE_SECTIONS } from '@/constants/homePageSections'
+import { List } from '@/components/List'
 
 const SECTION = HOME_PAGE_SECTIONS.SKILLS
 
@@ -31,13 +32,13 @@ export const Skills = () => {
 
           <p className="mt-8 mb-4 text-xl">Habilidades relacionadas:</p>
 
-          <ul className="pl-8 list-disc">
-            <li>Responsive Web Design;</li>
-            <li>UX (User Experience);</li>
-            <li>UI design;</li>
-            <li>Usabilidade;</li>
-            <li>Acessibilidade.</li>
-          </ul>
+          <List.Root>
+            <List.Item>Responsive Web Design;</List.Item>
+            <List.Item>UX (User Experience);</List.Item>
+            <List.Item>UI design;</List.Item>
+            <List.Item>Usabilidade;</List.Item>
+            <List.Item>Acessibilidade.</List.Item>
+          </List.Root>
         </div>
       </Section.Container>
     </Section.Root>
