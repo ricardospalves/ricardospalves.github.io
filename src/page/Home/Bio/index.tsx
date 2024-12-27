@@ -6,6 +6,8 @@ import {
   LuCalendar as CalendarIcon,
   LuGraduationCap as GraduationCapIcon,
   LuMonitor as MonitorIcon,
+  LuBookOpen as BookOpenIcon,
+  LuRocket as RocketIcon,
 } from 'react-icons/lu'
 
 const SECTION = HOME_PAGE_SECTIONS.ABOUT
@@ -18,7 +20,7 @@ type ListItem = {
 
 const LIST: ListItem[] = [
   {
-    id: 'experienceTime',
+    id: 'work',
     Icon: CalendarIcon,
     children: (
       <>
@@ -36,11 +38,29 @@ const LIST: ListItem[] = [
     ),
   },
   {
-    id: 'tecnico',
+    id: 'technician',
     Icon: MonitorIcon,
     children: (
       <>
-        <strong>Técnico em Informatica</strong> pela ETEC;
+        <strong>Técnico em Informatica</strong> pela <strong>ETEC</strong>;
+      </>
+    ),
+  },
+  {
+    id: 'back-end',
+    Icon: BookOpenIcon,
+    children: (
+      <>
+        Aprofundando minhas habilidades em <strong>back-end</strong>;
+      </>
+    ),
+  },
+  {
+    id: 'full-stack',
+    Icon: RocketIcon,
+    children: (
+      <>
+        Futuro <strong>Full Stack</strong>.
       </>
     ),
   },
