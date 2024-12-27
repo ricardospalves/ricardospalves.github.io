@@ -12,27 +12,27 @@ const interFont = Inter({
 })
 
 export const metadata: Metadata = {
-  metadataBase: new URL(CONFIG.url),
-  title: `${CONFIG.name} - ${CONFIG.occupation}`,
-  description: CONFIG.description,
+  metadataBase: new URL(CONFIG.URL),
+  title: `${CONFIG.NAME} - ${CONFIG.OCCUPATION}`,
+  description: CONFIG.DESCRIPTION,
   robots: 'index,follow',
   verification: {
     google: 'u1GUmbTO1-GCaMc0IjPoL7EUp3MPUapTtdFMUCE3Ob4',
   },
   twitter: {
     card: 'summary_large_image',
-    site: CONFIG.url,
-    description: CONFIG.description,
-    title: CONFIG.name,
+    site: CONFIG.URL,
+    description: CONFIG.DESCRIPTION,
+    title: CONFIG.NAME,
     images: '/share/twitter-card-cover.png',
   },
   openGraph: {
-    url: CONFIG.url,
+    url: CONFIG.URL,
     type: 'website',
     locale: 'pt_BR',
-    siteName: CONFIG.name,
-    title: CONFIG.name,
-    description: CONFIG.description,
+    siteName: CONFIG.NAME,
+    title: CONFIG.NAME,
+    description: CONFIG.DESCRIPTION,
     images: '/share/open-graph-cover.png',
   },
 }
@@ -72,7 +72,7 @@ export default function RootLayout({
         <meta name="msapplication-TileColor" content="#000000" />
         <meta
           name="msapplication-config"
-          content="./favicons/browserconfig.xml"
+          content="./favicons/browserconfig.XML"
         />
         <meta name="theme-color" content="#000000" />
       </head>

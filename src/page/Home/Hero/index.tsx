@@ -11,10 +11,10 @@ export const Hero = () => {
         <div className="lg:grid lg:grid-cols-2">
           <div>
             <h1 className="text-4xl lg:text-6xl leading-tight font-bold text-highlightForeground">
-              {CONFIG.author}
+              {CONFIG.AUTHOR}
             </h1>
 
-            <p className="text-2xl">{CONFIG.occupation}</p>
+            <p className="text-2xl">{CONFIG.OCCUPATION}</p>
           </div>
 
           <div className="mt-8 lg:mt-0">
