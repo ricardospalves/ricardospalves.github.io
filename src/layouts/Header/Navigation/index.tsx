@@ -15,20 +15,20 @@ export const Navigation = () => {
   return (
     <nav
       className={classNames([
-        'md:block md:static absolute top-full inset-x-0 border-y border-foreground md:border-y-0 bg-background shadow md:shadow-none',
+        'lg:block lg:static absolute top-full inset-x-0 border-y border-foreground lg:border-y-0 bg-background shadow lg:shadow-none',
         !open && 'hidden',
       ])}
     >
-      <ul className="md:flex divide-y divide-foreground md:divide-y-0">
+      <ul className="lg:flex divide-y divide-foreground lg:divide-y-0">
         {SECTIONS.map(({ ID, NAME }) => {
           return (
             <li key={ID}>
               <Link
                 href={`#${ID}`}
                 className={classNames([
-                  'block px-2 py-3 md:p-4',
+                  'block px-2 py-3 lg:p-4',
                   ID === currentSection?.ID &&
-                    'bg-highlightForeground text-background md:bg-transparent md:text-highlightForeground',
+                    'bg-highlightForeground text-background lg:bg-transparent lg:text-highlightForeground',
                 ])}
               >
                 {NAME}

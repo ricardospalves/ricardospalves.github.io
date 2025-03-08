@@ -10,7 +10,7 @@ export const BurgerButton = () => {
   return (
     <button
       type="button"
-      className="block md:hidden size-12 p-2"
+      className="block lg:hidden size-12 p-2"
       aria-label={
         open ? 'Fechar a navegação principal' : 'Abrir a navegação principal'
       }
