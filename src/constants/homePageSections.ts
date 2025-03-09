@@ -25,7 +25,7 @@ export const HOME_PAGE_SECTIONS: Record<Keys, Readonly<Section>> = {
   },
   EDUCATION: {
     ID: 'formacao-academica',
-    NAME: 'Formação academica',
+    NAME: 'Formação acadêmica',
     SHORTNAME: 'Educação',
   },
   SKILLS: {
