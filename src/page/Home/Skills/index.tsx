@@ -33,6 +33,8 @@ export const Skills = () => {
           <p className="mt-8 mb-4 text-xl">Habilidades relacionadas:</p>
 
           <List.Root>
+            <List.Item>Estrutura de dados;</List.Item>
+            <List.Item>Algoritmos;</List.Item>
             <List.Item>Responsive Web Design;</List.Item>
             <List.Item>UX (User Experience);</List.Item>
             <List.Item>UI design;</List.Item>
