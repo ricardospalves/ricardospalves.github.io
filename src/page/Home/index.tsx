@@ -1,4 +1,5 @@
 import { Bio } from './Bio'
+import { Customers } from './Customers'
 import { Education } from './Education'
 import { Hero } from './Hero'
 import { Portfolio } from './Portfolio'
@@ -14,6 +15,7 @@ export const Home = () => {
       <Education />
       <Skills />
       <Portfolio />
+      <Customers />
     </article>
   )
 }

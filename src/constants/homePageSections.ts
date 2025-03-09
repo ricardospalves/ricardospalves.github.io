@@ -4,7 +4,13 @@ type Section = {
   SHORTNAME: string
 }
 
-type Keys = 'ABOUT' | 'WORK' | 'EDUCATION' | 'SKILLS' | 'PORTFOLIO'
+type Keys =
+  | 'ABOUT'
+  | 'WORK'
+  | 'EDUCATION'
+  | 'SKILLS'
+  | 'PORTFOLIO'
+  | 'CUSTOMERS'
 
 export const HOME_PAGE_SECTIONS: Record<Keys, Readonly<Section>> = {
   ABOUT: {
@@ -31,5 +37,10 @@ export const HOME_PAGE_SECTIONS: Record<Keys, Readonly<Section>> = {
     ID: 'portfolio',
     NAME: 'Portfólio',
     SHORTNAME: 'Portfólio',
+  },
+  CUSTOMERS: {
+    ID: 'clientes-atendidos',
+    NAME: 'Clientes atendidos',
+    SHORTNAME: 'Clientes',
   },
 } as const
