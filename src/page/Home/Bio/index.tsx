@@ -1,7 +1,7 @@
 import { Section } from '@/components/Section'
 import { HOME_PAGE_SECTIONS } from '@/constants/homePageSections'
 import { ReactNode } from 'react'
-import { IconBase } from 'react-icons'
+import { IconType } from 'react-icons'
 import {
   LuCalendar as CalendarIcon,
   LuGraduationCap as GraduationCapIcon,
@@ -14,7 +14,7 @@ const SECTION = HOME_PAGE_SECTIONS.ABOUT
 
 type ListItem = {
   id: string
-  Icon: typeof IconBase
+  Icon: IconType
   children: ReactNode
 }
 
