@@ -5,7 +5,7 @@ export const Logo = () => {
   return (
     <Link
       href="/"
-      className="flex items-center size-12 lg:h-auto p-2 lg:p-1 text-highlightForeground"
+      className="flex items-center size-12 lg:h-auto p-2 lg:p-1 text-highlight-foreground"
     >
       <span className="sr-only">{CONFIG.NAME}</span>
 

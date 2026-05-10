@@ -12,13 +12,13 @@ export const Card = ({ description, href, name }: CardProps) => {
     <article>
       <ExternalLink
         href={href}
-        className="block lg:flex lg:flex-col lg:min-h-full p-4 border border-current hover:border-highlightForeground focus-visible:border-highlightForeground hover:text-highlightForeground focus-visible:text-highlightForeground rounded transition-colors"
+        className="block lg:flex lg:flex-col lg:min-h-full p-4 border border-current hover:border-highlight-foreground focus-visible:border-highlight-foreground hover:text-highlight-foreground focus-visible:text-highlight-foreground rounded transition-colors"
       >
-        <h4 className="text-lg font-bold text-highlightForeground">{name}</h4>
+        <h4 className="text-lg font-bold text-highlight-foreground">{name}</h4>
 
         <p className="my-4">{description}</p>
 
-        <p className="flex items-center justify-center gap-2 py-3 lg:mt-auto font-bold text-center rounded bg-highlightForeground text-background">
+        <p className="flex items-center justify-center gap-2 py-3 lg:mt-auto font-bold text-center rounded bg-highlight-foreground text-background">
           <span className="block">Ver o projeto</span>
           <ExternalLinkIcon className="block size-6" aria-hidden={true} />
         </p>

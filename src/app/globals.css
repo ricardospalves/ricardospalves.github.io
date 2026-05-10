@@ -1,18 +1,22 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import 'tailwindcss';
 
 :root {
   --background: #fff;
   --foreground: #595959;
-  --highlightForeground: #000;
+  --highlight-foreground: #000;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-highlight-foreground: var(--highlight-foreground);
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #1f1f1f;
     --foreground: #a9a9a9;
-    --highlightForeground: #fff;
+    --highlight-foreground: #fff;
   }
 }
 

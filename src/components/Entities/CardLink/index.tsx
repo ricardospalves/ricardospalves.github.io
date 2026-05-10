@@ -8,7 +8,7 @@ type CardLinkProps = {
 export const CardLink = ({ href }: CardLinkProps) => {
   return (
     <p>
-      <ExternalLink href={href} className="text-highlightForeground">
+      <ExternalLink href={href} className="text-highlight-foreground">
         <span className="underline">Link para o curso</span>{' '}
         <ExternalLinkIcon className="inline-block size-4" aria-hidden={true} />
       </ExternalLink>

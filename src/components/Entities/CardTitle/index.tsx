@@ -13,7 +13,7 @@ export const CardTitle = ({ as, className, ...props }: CardTitleProps) => {
   return (
     <Component
       className={classNames([
-        'grow text-highlightForeground text-lg font-bold',
+        'grow text-highlight-foreground text-lg font-bold',
         className,
       ])}
       {...props}

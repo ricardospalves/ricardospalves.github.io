@@ -10,7 +10,7 @@ export const Hero = () => {
       <Container className="grid items-center">
         <div className="lg:grid lg:grid-cols-2">
           <div>
-            <h1 className="text-4xl lg:text-6xl leading-tight font-bold text-highlightForeground">
+            <h1 className="text-4xl lg:text-6xl leading-tight font-bold text-highlight-foreground">
               {CONFIG.AUTHOR}
             </h1>
 
@@ -27,7 +27,7 @@ export const Hero = () => {
 
             <Link
               href="/files/curriculo-ricardo-alves.pdf"
-              className="flex lg:inline-flex items-center justify-center w-full lg:w-auto px-0 lg:px-8 py-4 mt-8 text-center font-bold text-lg bg-highlightForeground hover:bg-foreground focus-visible:bg-foreground text-background rounded transition-colors"
+              className="flex lg:inline-flex items-center justify-center w-full lg:w-auto px-0 lg:px-8 py-4 mt-8 text-center font-bold text-lg bg-highlight-foreground hover:bg-foreground focus-visible:bg-foreground text-background rounded transition-colors"
               download
             >
               <DownloadIcon className="block size-6" aria-hidden={true} />

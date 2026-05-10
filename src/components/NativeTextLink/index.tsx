@@ -14,7 +14,7 @@ export const NativeTextLink = forwardRef<
   return (
     <a
       ref={ref}
-      className={classNames(['underline text-highlightForeground', className])}
+      className={classNames(['underline text-highlight-foreground', className])}
       target={target}
       rel={relProp}
       {...props}

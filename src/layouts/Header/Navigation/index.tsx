@@ -28,7 +28,7 @@ export const Navigation = () => {
                 className={classNames([
                   'block px-2 py-3 lg:p-4',
                   ID === currentSection?.ID &&
-                    'bg-highlightForeground text-background lg:bg-transparent lg:text-highlightForeground',
+                    'bg-highlight-foreground text-background lg:bg-transparent lg:text-highlight-foreground',
                 ])}
               >
                 {NAME}

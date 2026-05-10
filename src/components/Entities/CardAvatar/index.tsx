@@ -8,7 +8,7 @@ export const CardAvatar = ({ className, ...props }: CardAvatarProps) => {
   return (
     <Avatar
       className={classNames([
-        'shrink-0 size-16 text-background bg-highlightForeground',
+        'shrink-0 size-16 text-background bg-highlight-foreground',
         className,
       ])}
       {...props}

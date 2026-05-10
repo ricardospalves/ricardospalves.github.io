@@ -6,7 +6,7 @@ export const OtherCustomers = () => {
     <section className="px-2 lg:px-0 pt-16">
       <h3
         id="outros-clientes"
-        className="mb-4 text-2xl font-bold text-highlightForeground"
+        className="mb-4 text-2xl font-bold text-highlight-foreground"
       >
         Outros clientes
       </h3>

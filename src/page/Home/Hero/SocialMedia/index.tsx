@@ -1,14 +1,14 @@
-import { IconBase } from 'react-icons'
+import { IconType } from 'react-icons'
 import {
-  SiLinkedin as LinkedInIcon,
-  SiGithub as GithubIcon,
-  SiCodepen as CodepenIcon,
-} from 'react-icons/si'
+  FaLinkedin as LinkedInIcon,
+  FaGithub as GithubIcon,
+  FaCodepen as CodepenIcon,
+} from 'react-icons/fa6'
 
 type SocialMediaListItem = {
   name: string
   href: string
-  Icon: typeof IconBase
+  Icon: IconType
 }
 
 const SOCIAL_MEDIA_LIST: Readonly<SocialMediaListItem[]> = [
@@ -37,7 +37,7 @@ export const SocialMedia = () => {
           <li key={href} className="shrink-0 size-12 lg:size-8">
             <a
               href={href}
-              className="block size-full p-2 lg:p-0 hover:text-highlightForeground focus-visible:text-highlightForeground transition-colors"
+              className="block size-full p-2 lg:p-0 hover:text-highlight-foreground focus-visible:text-highlight-foreground transition-colors"
             >
               <span className="sr-only">{name}</span>
               <Icon className="block size-full" aria-hidden={true} />

@@ -1,6 +1,6 @@
-import { IconBase } from 'react-icons'
+import { IconType } from 'react-icons'
 import {
-  SiCss3 as CSS3Icon,
+  SiCss as CSS3Icon,
   SiDocker as DockerIcon,
   SiGit as GitIcon,
   SiHtml5 as HTML5Icon,
@@ -20,7 +20,7 @@ import {
 } from 'react-icons/si'
 
 type SkillsListItem = {
-  Icon: typeof IconBase
+  Icon: IconType
   name: string
 }
 

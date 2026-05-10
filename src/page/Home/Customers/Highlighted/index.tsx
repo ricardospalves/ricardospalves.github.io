@@ -6,7 +6,7 @@ export const Highlighted = () => {
     <section className="px-2 lg:px-0 pt-16">
       <h3
         id="clientes-em-destaque"
-        className="mb-4 text-2xl font-bold text-highlightForeground"
+        className="mb-4 text-2xl font-bold text-highlight-foreground"
       >
         Clientes em destaque
       </h3>
@@ -37,7 +37,7 @@ export const Highlighted = () => {
             e o{' '}
             <ExternalLink
               href="https://moranablog.com.br"
-              className="underline text-highlightForeground"
+              className="underline text-highlight-foreground"
             >
               Morana Blog
             </ExternalLink>
@@ -67,7 +67,7 @@ export const Highlighted = () => {
             Desenvolvi a interface do novo site da{' '}
             <ExternalLink
               href="https://fxstudios.com.br"
-              className="underline text-highlightForeground"
+              className="underline text-highlight-foreground"
             >
               FX Studios
             </ExternalLink>

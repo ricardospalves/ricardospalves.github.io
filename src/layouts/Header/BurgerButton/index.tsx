@@ -19,7 +19,7 @@ export const BurgerButton = () => {
       }}
     >
       <ToggleButtonIcon
-        className="block size-full fill-highlightForeground"
+        className="block size-full fill-highlight-foreground"
         aria-hidden={true}
       />
     </button>

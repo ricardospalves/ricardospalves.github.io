@@ -10,7 +10,7 @@ export const CardInstitution = ({
   shortCourses,
 }: CardInstitutionProps) => {
   return (
-    <p className="text-highlightForeground">
+    <p className="text-highlight-foreground">
       {children} {shortCourses && <i>(curso livre)</i>}
     </p>
   )

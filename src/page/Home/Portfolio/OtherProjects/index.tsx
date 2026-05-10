@@ -6,7 +6,7 @@ import { LIST } from './list'
 export const OtherProjects = () => {
   return (
     <section className="px-2 lg:px-0 pt-16">
-      <h3 className="mb-4 text-2xl font-bold text-highlightForeground">
+      <h3 className="mb-4 text-2xl font-bold text-highlight-foreground">
         Outros projetos
       </h3>
 
@@ -16,7 +16,7 @@ export const OtherProjects = () => {
             <List.Item key={href}>
               <ExternalLink
                 href={href}
-                className="underline text-highlightForeground"
+                className="underline text-highlight-foreground"
               >
                 {name}{' '}
                 <ExternalLinkIcon className="inline" aria-hidden={true} />
