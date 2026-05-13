@@ -1,11 +1,9 @@
 import { IconType } from 'react-icons'
 import {
   SiCss as CSS3Icon,
-  SiDocker as DockerIcon,
   SiGit as GitIcon,
   SiHtml5 as HTML5Icon,
   SiJavascript as JavaScriptIcon,
-  SiMongodb as MongoDBIcon,
   SiMysql as MySQLIcon,
   SiNextdotjs as NextJSIcon,
   SiNodedotjs as NodeJSIcon,
@@ -13,61 +11,66 @@ import {
   SiReact as ReactIcon,
   SiRemix as RemixIcon,
   SiSass as SassIcon,
-  SiStyledcomponents as StyledComponentsIcon,
   SiTailwindcss as TailwindCSSIcon,
   SiTypescript as TypeScriptIcon,
   SiVite as ViteIcon,
+  SiSvelte as SvelteIcon,
+  SiPostgresql as PostgreSQLIcon,
 } from 'react-icons/si'
 
-type SkillsListItem = {
+type SkillsListItem = Readonly<{
   Icon: IconType
   name: string
-}
+}>
 
-export const SKILLS_LIST: SkillsListItem[] = [
+export const SKILLS_LIST: ReadonlyArray<SkillsListItem> = [
   {
     Icon: ReactIcon,
     name: 'React',
   },
   {
-    Icon: NextJSIcon,
-    name: 'Next.js',
-  },
-  {
-    Icon: NodeJSIcon,
-    name: 'Node.js',
+    Icon: SvelteIcon,
+    name: 'Svelte',
   },
   {
     Icon: TypeScriptIcon,
     name: 'TypeScript',
   },
   {
-    Icon: JavaScriptIcon,
-    name: 'JavaScript',
-  },
-  {
-    Icon: TailwindCSSIcon,
-    name: 'Tailwind CSS',
-  },
-  {
-    Icon: StyledComponentsIcon,
-    name: 'styled-components',
+    Icon: NextJSIcon,
+    name: 'Next.js',
   },
   {
     Icon: RemixIcon,
     name: 'Remix',
   },
   {
-    Icon: SassIcon,
-    name: 'Sass',
+    Icon: TailwindCSSIcon,
+    name: 'Tailwind CSS',
+  },
+  {
+    Icon: NodeJSIcon,
+    name: 'Node.js',
+  },
+  {
+    Icon: JavaScriptIcon,
+    name: 'JavaScript',
+  },
+  {
+    Icon: PostgreSQLIcon,
+    name: 'PostgreSQL',
+  },
+  {
+    Icon: GitIcon,
+    name: 'Git',
   },
   {
     Icon: ViteIcon,
     name: 'Vite',
   },
   {
-    Icon: GitIcon,
-    name: 'Git',
+    Icon: SassIcon,
+    name: 'Sass',
   },
   {
     Icon: HTML5Icon,
@@ -78,19 +81,11 @@ export const SKILLS_LIST: SkillsListItem[] = [
     name: 'CSS',
   },
   {
-    Icon: MongoDBIcon,
-    name: 'MongoDB',
-  },
-  {
     Icon: MySQLIcon,
     name: 'MySQL',
   },
   {
     Icon: PythonIcon,
     name: 'Python',
-  },
-  {
-    Icon: DockerIcon,
-    name: 'Docker',
   },
 ] as const
