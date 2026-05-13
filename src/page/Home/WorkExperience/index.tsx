@@ -2,6 +2,7 @@ import { Entities } from '@/components/Entities'
 import { List } from '@/components/List'
 import { Section } from '@/components/Section'
 import { HOME_PAGE_SECTIONS } from '@/constants/homePageSections'
+import { WORK_EXPERIENCE_LIST } from './list'
 
 const SECTION = HOME_PAGE_SECTIONS.WORK
 
@@ -12,43 +13,45 @@ export const WorkExperience = () => {
         <Section.Heading as="h2">{SECTION.NAME}</Section.Heading>
 
         <Entities.Root>
-          <Entities.Card>
-            <Entities.CardAvatar title="Spacelab - Produtora e Agência Web">
-              SP
-            </Entities.CardAvatar>
+          {WORK_EXPERIENCE_LIST.map(
+            ({
+              companyAvatar,
+              companyName,
+              endDate,
+              jobTitle,
+              startDate,
+              list,
+            }) => {
+              return (
+                <Entities.Card key={companyName}>
+                  <Entities.CardAvatar title={companyName}>
+                    {companyAvatar}
+                  </Entities.CardAvatar>
 
-            <Entities.CardContent>
-              <Entities.CardTitle as="h3">
-                Desenvolvedor front-end
-              </Entities.CardTitle>
+                  <Entities.CardContent>
+                    <Entities.CardTitle as="h3">{jobTitle}</Entities.CardTitle>
 
-              <Entities.CardInstitution>
-                Spacelab - Produtora e Agência Web
-              </Entities.CardInstitution>
+                    <Entities.CardInstitution>
+                      {companyName}
+                    </Entities.CardInstitution>
 
-              <Entities.CardTimeRange
-                startISODate="2015-01-26"
-                endISODate="current"
-              />
+                    <Entities.CardTimeRange
+                      startISODate={startDate}
+                      endISODate={endDate}
+                    />
 
-              <List.Root className="mt-4">
-                <List.Item>
-                  Desenvolver interfaces de usuário para todos os projetos,
-                  garantindo uma experiência visual atraente e funcional;
-                </List.Item>
-
-                <List.Item>
-                  Implementar tecnologias modernas, como React e TypeScript,
-                  para criar aplicações escaláveis e de alta qualidade;
-                </List.Item>
-
-                <List.Item>
-                  Otimizar a performance, acessibilidade e usabilidade das
-                  aplicações.
-                </List.Item>
-              </List.Root>
-            </Entities.CardContent>
-          </Entities.Card>
+                    {list && (
+                      <List.Root className="mt-4">
+                        {list.map((text, index) => {
+                          return <List.Item key={index}>{text}</List.Item>
+                        })}
+                      </List.Root>
+                    )}
+                  </Entities.CardContent>
+                </Entities.Card>
+              )
+            },
+          )}
         </Entities.Root>
       </Section.Container>
     </Section.Root>
